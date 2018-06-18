@@ -1,0 +1,37 @@
+{
+  "$schema":
+    "https://dev.office.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "78efa89b-9fda-46d9-86a6-94c5029a66fd",
+  "alias": "ToolkitViewerWebPart",
+  "componentType": "WebPart",
+
+  // The "*" signifies that the version should be taken from the package.json
+  "version": "*",
+  "manifestVersion": 2,
+
+  // If true, the component can only be installed on sites where Custom Script is allowed.
+  // Components that allow authors to embed arbitrary script code should set this to true.
+  // https://support.office.com/en-us/article/Turn-scripting-capabilities-on-or-off-1f2c515f-5d7e-448a-9fd7-835da935584f
+  "requiresCustomScript": false,
+
+  "preconfiguredEntries": [
+    {
+      "groupId": "3b591d08-c627-4fd9-a539-2977c7cbc272", // Other
+      "group": { "default": "Custom" },
+      "title": { "default": "Toolkit Viewer" },
+      "description": { "default": "toolkitViewer description" },
+      "officeFabricIconFontName": "Page",
+      "properties": {
+        "library1": "",
+        "library2": "",
+        "library3": "",
+        "library4": "",
+        "itemLimit": 10,
+        "orderBy": "Modified",
+        "direction": "desc",
+        "queryString":
+          "$select=File_x0020_Type,Title,Modified,Created,Author/Title,Editor/Title,Versions/VersionLabel&$expand=Editor,Author,File,Versions&$filter=OData__ModerationStatus eq 0&$top=10"
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://dev.office.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "toolkit-viewer-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/toolkitViewer/ToolkitViewerWebPart.js",
+          "manifest": "./src/webparts/toolkitViewer/ToolkitViewerWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "ToolkitViewerWebPartStrings": "lib/webparts/toolkitViewer/loc/{locale}.js"
+  }
+}

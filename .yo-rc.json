@@ -1,0 +1,8 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "version": "1.4.1",
+    "libraryName": "toolkit-viewer",
+    "libraryId": "716f510a-ab73-4fc5-9271-459bf032038f",
+    "environment": "spo"
+  }
+}

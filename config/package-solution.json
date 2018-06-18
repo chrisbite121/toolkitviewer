@@ -1,0 +1,13 @@
+{
+  "$schema": "https://dev.office.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "toolkit-viewer-client-side-solution",
+    "id": "716f510a-ab73-4fc5-9271-459bf032038f",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true
+  },
+  "paths": {
+    "zippedPackage": "solution/toolkit-viewer.sppkg"
+  }
+}
